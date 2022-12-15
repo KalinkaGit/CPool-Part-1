@@ -1,0 +1,28 @@
+/*
+** EPITECH PROJECT, 2022
+** My StrStr
+** File description:
+** strstr
+*/
+
+#include <string.h>
+
+char *my_strstr(char *str, char const *to_find)
+{
+    int count2 = 0;
+    int count3 = 0;
+    for (int i = 0; to_find[i] != '\0'; i++) {
+        count3++;
+    }
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == to_find[count2]) {
+            count2++;
+        } else if (str[i] != to_find[count2] && count2 != count3) {
+            count2 = 0;
+        }
+    }
+    if (count2 == count3)
+        return (to_find);
+    else
+        return (0);
+}

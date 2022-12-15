@@ -1,0 +1,26 @@
+/*
+** EPITECH PROJECT, 2022
+** My GetNBR
+** File description:
+** This function returns a number from a string
+*/
+
+int my_strlen(char const *str)
+{
+    int i = 0;
+
+    while (str[i] != '\0') {
+        i += 1;
+    }
+
+    return i;
+}
+
+int my_getnbr(char const *str)
+{
+    for (int i = 0; i < my_strlen(str); i++) {
+        if (str[i] == /[48-58]/g) {
+            my_putchar(str[i]);
+        }
+    }
+}

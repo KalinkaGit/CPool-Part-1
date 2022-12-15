@@ -1,0 +1,11 @@
+/*
+** EPITECH PROJECT, 2022
+** My Putstr
+** File description:
+** This function prints the characters of a string one by one.
+*/
+
+int my_putstr(char const *str)
+{
+    my_putchar(48 + str);
+}

@@ -1,0 +1,63 @@
+void my_putchar(char c) {
+    write(1, &c, 1);
+}
+
+int my_putstr(char const *str)
+{
+    for (int i = 0; str[i] != '\0'; i++) {
+        my_putchar(str[i]);
+    }
+}
+
+int my_strlen(char const *str)
+{
+    int i = 0;
+
+    while (str[i] != '\0') {
+        i += 1;
+    }
+
+    return i;
+}
+
+int my_put_nbr(int nb)
+{
+    if (nb < 0) {
+        my_putchar('-');
+        nb = -nb;
+    }
+
+    if (nb > 9) {
+        my_put_nbr(nb / 10);
+    }
+
+    my_putchar(48 + (nb % 10));
+}
+
+int main(void) {
+    char arr[10];
+
+    arr[0] = '+';
+    arr[1] = '+';
+    arr[2] = '+';
+    arr[3] = '+';
+    arr[4] = '-';
+    arr[5] = '+';
+    arr[6] = '-';
+    arr[7] = '-';
+    arr[8] = '+';
+    arr[9] = '-';
+    arr[10] = '-';
+    arr[11] = '0';
+    arr[12] = '9';
+    arr[13] = '-';
+    arr[14] = '+';
+    arr[15] = 'a';
+    arr[16] = '9';
+    arr[17] = '\0';
+
+
+    my_getnbr(&arr);
+    
+    return(0);
+}

@@ -1,0 +1,12 @@
+/*
+** EPITECH PROJECT, 2022
+** Test my strstr
+** File description:
+** test
+*/
+
+#include <criterion/criterion.h>
+
+Test(my_strstr, best_test) {
+    cr_assert_str_eq(my_revstr(strdup("Hello")), "olleH");
+}

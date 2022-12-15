@@ -1,0 +1,6 @@
+./include/mylist.h~:1: MAJOR:C-O1
+./lib/libmy.a:1: MAJOR:C-O1
+./lib/my/libmy.a:1: MAJOR:C-O1
+./my_apply_on_nodes.c~:1: MAJOR:C-O1
+./my_list_size.c~:1: MAJOR:C-O1
+./my_params_to_list.c~:1: MAJOR:C-O1

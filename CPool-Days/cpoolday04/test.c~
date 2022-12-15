@@ -1,0 +1,21 @@
+int test() {
+    char a;
+    char *ptr;
+    int b;
+    int *ptr2;
+
+    a = "a";
+    b = 48;
+    ptr = &a;
+    my_putchar(a);
+    *ptr = "b";
+    my_putchar(',');
+    my_putchar(a);
+    my_putchar(' ');
+    ptr = &b;
+    my_putchar(b);
+    my_putchar(',');
+    my_putchar(ptr2);
+    my_putchar(',');
+    *ptr2 = 49;
+    my_putchar(b);

@@ -1,0 +1,36 @@
+/*
+** EPITECH PROJECT, 2022
+** My Evil Str
+** File description:
+** This function swaps each characters of a string, two by two.
+*/
+
+void my_swap(char *a, char *b)
+{
+    char c = *a;
+    *a = *b;
+    *b = c;
+}
+
+int my_strlen(char const *str)
+{
+    int i = 0;
+
+    while (str[i] != '\0') {
+        i += 1;
+    }
+
+    return i;
+}
+
+char *my_evil_str(char *str)
+{
+    int stringlen = my_strlen(str);
+    my_putchar(48 + stringlen);
+    
+    for (int i = stringlen; i > 0; i--) {
+        my_swap(&str[i], &str[i + 1]);
+        my_putchar(str[i]);
+        my_putchar(str[i - 1]);
+    }
+}

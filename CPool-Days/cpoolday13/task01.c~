@@ -1,0 +1,12 @@
+/*
+** EPITECH PROJECT, 2022
+** Task01
+** File description:
+** CSFML
+*/
+
+void main(void)
+{
+    sfVideoMode mode = {800, 600, 32};
+    window = sfRenderWindow_create(mode, "Test", sfResize | sfClose, NULL);
+}

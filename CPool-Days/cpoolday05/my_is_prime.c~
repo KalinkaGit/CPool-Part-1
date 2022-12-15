@@ -1,0 +1,20 @@
+/*
+** EPITECH PROJECT, 2022
+** My Is Prime
+** File description:
+** This function returns 1 if the number
+** is prime and 0 if not.
+*/
+
+int my_is_prime(int nb)
+{
+    if (nb <= 0) {
+        return (0);
+    }
+
+    for (int i = 2; nb % i < 0; i++) {
+        if (i == nb) {
+            return (1);
+        }
+    }
+}

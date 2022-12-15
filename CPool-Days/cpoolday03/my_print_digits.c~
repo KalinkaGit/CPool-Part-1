@@ -1,0 +1,17 @@
+/*
+** EPITECH PROJECT, 2022
+** My Print Digits
+** File description:
+** This function prints digits in ascending order
+*/
+
+int my_print_digits(void)
+{
+    int i = 49;
+
+    while (i < 59)
+    {
+        my_putchar(i);
+        i += 1;
+    }
+}

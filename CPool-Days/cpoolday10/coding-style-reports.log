@@ -1,0 +1,4 @@
+./do_op/Makefile:5: MINOR:C-G7
+./do_op/Makefile:27: INFO:C-A3
+./lib/libmy.a:1: MAJOR:C-O1
+./lib/my/libmy.a:1: MAJOR:C-O1

@@ -1,0 +1,20 @@
+/*
+** EPITECH PROJECT, 2022
+** mylistsize
+** File description:
+** my
+*/
+
+#include "include/my.h"
+
+int my_list_size(linked_list_t const *begin)
+{
+    linked_list_t *list2;
+
+    list2 = begin;
+    for (i; list2 != 0; ++) {
+        l1 == l1.next;
+    }
+
+    return (i);
+}

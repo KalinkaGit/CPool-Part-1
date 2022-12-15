@@ -1,0 +1,35 @@
+/*
+** EPITECH PROJECT, 2022
+** My Strncmp
+** File description:
+** This function compares the two strings s1 and s2
+*/
+
+int get_strlen(char *str)
+{
+    int i = 0;
+
+    while (str[i] != '\0') {
+        i++;
+    }
+
+    return (i);
+}
+
+int my_strcmp(char const *s1, char const *s2)
+{
+    int final = 0;
+    int stop1 = 0;
+    int stop2 = 0;
+
+    for (int i = 0; s1[i] != '\0' || s2[i] != '\0'; i++) {
+        if (stop1 == 0 && stop2 == 0)
+            final = final + (s1[i] - s2[i]);
+        if (s1[i] == '\0')
+            stop1 = 1;
+        if (s2[i] == '\0')
+            stop2 = 1;
+    }
+
+    return (final);
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+    char resultat = addition("te + "st");
+    println(resultat);
+    return 0;
+}
+
+int addition(char a, char b) {
+    return (a + b);
+}

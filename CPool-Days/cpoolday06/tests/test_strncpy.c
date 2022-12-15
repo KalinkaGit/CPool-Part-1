@@ -1,0 +1,16 @@
+/*
+** EPITECH PROJECT, 2022
+** test
+** File description:
+** test
+*/
+
+#include <criterion/criterion.h>
+
+Test(my_strncpy, copy_five_characters_in_empty_array)
+{
+    char dest[6] = {0};
+
+    my_strncpy(dest, "Hello world", 5);
+    cr_assert_str_eq(dest, "Hello");
+}

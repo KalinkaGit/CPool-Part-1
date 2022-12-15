@@ -1,0 +1,16 @@
+/*
+** EPITECH PROJECT, 2022
+** My ISGNEG
+** File description:
+** This function prints either N if the integer passed
+** parameter is negative or P, if positive or null.
+*/
+
+int my_isneg(int n)
+{
+    if (n >= 0) {
+        my_putchar(80);
+    } else {
+        my_putchar(78);
+    }
+}
